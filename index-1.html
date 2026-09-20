@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>رسالة خاصة ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#fff1f5,#ffe0ea);color:#4a1830;text-align:center}
+main{max-width:760px;margin:auto;padding:28px 18px 50px}
+.card{background:rgba(255,255,255,.82);border-radius:28px;padding:28px;margin:18px 0;box-shadow:0 12px 35px #8b294022}
+h1{font-size:38px;margin:10px 0}
+h2{font-size:25px}
+p{font-size:18px;line-height:1.9}
+.heart{font-size:72px;animation:pulse 1.5s infinite}
+button{border:0;border-radius:30px;padding:13px 24px;background:#c72c67;color:white;font-size:17px;cursor:pointer;margin:7px}
+button:hover{opacity:.9}
+.hidden{display:none}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gallery img{width:100%;height:210px;object-fit:cover;border-radius:18px}
+.note{font-size:14px;opacity:.7}
+@keyframes pulse{50%{transform:scale(1.08)}}
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>Happy Birthday!</h1>
+    <p>فتحي هاد الصفحة ملي تكوني بوحدك ❤️</p>
+    <button onclick="showMessage()">افتحي الرسالة 💌</button>
+    <div id="message" class="hidden">
+      <h2>رسالة خاصة</h2>
+      <p>3id milad sa3id o kol 3am o nti bikhir ❤️<br>o m3aya kanmtna lik ga3 dakchi li briti.<br>o tfkri dima bli ana m3ak 7ta twsli l dakchi li briti.<br>n9dr mankonch dima kanfr7k walakin rah kan7awl nkon lik sanad flw9t li kat7tajini fih.<br>o sm7i liya 3la ay nhar 9l9tk fih.<br>kanbghik ya a7sn 3chirti 😍❤️💋</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📸 ذكريات</h2>
+    <div class="gallery" style="grid-template-columns:1fr">
+      <img src="memories.png" alt="ذكريات" style="height:auto;max-height:none">
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🎵 أغنية</h2>
+    <p>🎵 Anniversaire — Eva<br>اضغط على الزر باش تفتح الأغنية فـ Spotify.</p>
+    <button onclick="openMusic()">شغّل الأغنية 🎵</button>
+  </div>
+
+  <div class="card">
+    <h2>✨ نهاية صغيرة</h2>
+    <p>شكراً حيث وصلتي حتى لهنا ❤️</p>
+  </div>
+</main>
+
+<script>
+function showMessage(){
+  document.getElementById("message").classList.remove("hidden");
+}
+function openMusic(){
+  window.open("https://open.spotify.com/track/21mPhBK0RBjLGR8pVkHOVA?si=_LDs5X_yQBS65TYUPdcV0g&utm_source=copy-link", "_blank");
+}
+</script>
+</body>
+</html>
